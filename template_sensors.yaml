@@ -1,0 +1,14 @@
+sensor:
+  - platform: moon
+  - platform: template
+    sensors:
+      zigbee_plug_load:
+        value_template: '{{ states.switch.plug_<uid>.attributes.load_power|int }}'
+      magic_cube_battery:
+        value_template: '{{ states.binary_sensor.<uid>.attributes.battery_level|int }}'
+      door_sensor_battery:
+        value_template: '{{ states.binary_sensor.door_window_sensor_<uid>.attributes.battery_level|int }}'
+      motion_sensor_battery:
+        value_template: '{{ states.binary_sensor.motion_sensor_<uid>.attributes.battery_level|int }}'
+      waterleak_sensor_battery:
+        value_template: '{{ states.binary_sensor.water_leak_sensor_<uid>.attributes.battery_level|int }}'
