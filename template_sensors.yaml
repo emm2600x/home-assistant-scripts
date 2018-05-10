@@ -1,5 +1,4 @@
 sensor:
-  - platform: moon
   - platform: template
     sensors:
       zigbee_plug_load:
