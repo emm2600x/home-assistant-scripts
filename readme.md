@@ -1,0 +1,1 @@
+Template Sensors for Home Assistant
