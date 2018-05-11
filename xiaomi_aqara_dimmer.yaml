@@ -1,0 +1,115 @@
+#boolean tracker to track state
+input_boolean:
+  rgb_dim_track:
+    name: RGB Dim Tracker
+    initial: off
+#automations to detect the long_click_press (holding type actions) and trigger scripts based on the input_boolean status
+automation:
+ - alias: Xiaomi brighten on
+   initial_state: 'on'
+   trigger:
+     - platform: event
+       event_type: click
+       event_data:
+         entity_id: binary_sensor.switch_<UID>
+         click_type: long_click_press
+   condition:
+     condition: and
+     conditions:
+     - condition: state
+       entity_id: input_boolean.rgb_dim_track
+       state: 'off'
+     - condition: state
+       entity_id: light.yeelight_<UID>
+       state: 'on'
+   action:
+     - service: script.turn_on
+       entity_id: script.brighten_rgb_track
+ - alias: Xiaomi brighten off
+   initial_state: 'on'
+   trigger:
+     - platform: state
+       entity_id: binary_sensor.switch_<UID>
+       from: 'on'
+       to: 'off'
+   condition:
+     condition: and
+     conditions:
+     - condition: state
+       entity_id: input_boolean.rgb_dim_track
+       state: 'off'
+     - condition: state
+       entity_id: light.yeelight_<UID>
+       state: 'on'
+   action:
+     - service: input_boolean.turn_on
+       entity_id: input_boolean.rgb_dim_track
+  #control input boolean automations:
+ - alias: Xiaomi dim on
+   initial_state: 'on'
+   trigger:
+     - platform: event
+       event_type: click
+       event_data:
+         entity_id: binary_sensor.switch_<UID>
+         click_type: long_click_press
+   condition:
+     condition: and
+     conditions:
+     - condition: state
+       entity_id: input_boolean.rgb_dim_track
+       state: 'on'
+     - condition: state
+       entity_id: light.yeelight_<UID>
+       state: 'on'
+   action:
+     - service: script.turn_on
+       entity_id: script.dim_rgb_track
+
+ - alias: Xiaomi dim off
+   initial_state: 'on'
+   trigger:
+     - platform: state
+       entity_id: binary_sensor.switch_<UID>
+       from: 'on'
+       to: 'off'
+   condition:
+     condition: and
+     conditions:
+     - condition: state
+       entity_id: input_boolean.rgb_dim_track
+       state: 'on'
+     - condition: state
+       entity_id: light.yeelight_<UID>
+       state: 'on'
+   action:
+     - service: input_boolean.turn_off
+       entity_id: input_boolean.rgb_dim_track
+#scripts to do perform the input_boolean switching and light state changes
+script:
+  dim_rgb_track:
+    sequence:
+      - condition: state
+        entity_id: input_boolean.rgb_dim_track
+        state: 'on'
+      - service: light.turn_on
+        entity_id: light.yeelight_<UID>
+        data_template:
+          brightness: '{{(states.light.yeelight_<UID>.attributes.brightness | round(0)) - 50}}'
+      - service: script.turn_off
+        entity_id: script.dim_rgb_track
+      - service: script.turn_on
+        entity_id: script.dim_rgb_track
+  brighten_rgb_track:
+    sequence:
+      - condition: state
+        entity_id: input_boolean.rgb_dim_track
+        state: 'off'
+      - service: light.turn_on
+        entity_id: light.yeelight_<UID>
+        data_template:
+          brightness: '{{(states.light.yeelight_<UID>.attributes.brightness | round(0)) + 50}}'
+      - service: script.turn_off
+        entity_id: script.brighten_rgb_track
+      - service: script.turn_on
+        entity_id: script.brighten_rgb_track

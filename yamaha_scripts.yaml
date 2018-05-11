@@ -1,0 +1,351 @@
+script:
+  rm_yamaha_power:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_power'
+  rm_yamaha_sleep:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_sleep'
+  rm_yamaha_hdmi_1:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_hdmi_1'
+  rm_yamaha_hdmi_2:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_hdmi_2'
+  rm_yamaha_hdmi_3:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_hdmi_3'
+  rm_yamaha_hdmi_4:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_hdmi_4'
+  rm_yamaha_audio_1:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_audio_1'
+  rm_yamaha_audio_2:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_audio_2'
+  rm_yamaha_audio_3:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_audio_3'
+  rm_yamaha_audio_4:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_audio_4'
+  rm_yamaha_audio_5:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_audio_5'
+  rm_yamaha_tuner_fm:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_tuner_fm'
+  rm_yamaha_tuner_memory:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_tuner_memory'
+  rm_yamaha_info:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_info'          
+  rm_yamaha_tuner_pre_up:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_tuner_pre_up'
+  rm_yamaha_tuner_pre_down:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_tuner_pre_down'
+  rm_yamaha_tune_up:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_tune_up'
+  rm_yamaha_tune_down:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_tune_down'          
+  rm_yamaha_sound_movie:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_sound_movie'
+  rm_yamaha_sound_music:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_sound_music'
+  rm_yamaha_sound_surdec:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_sound_surdec'
+  rm_yamaha_sound_bass:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_sound_bass'          
+  rm_yamaha_sound_enhancer:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_sound_enhancer'
+  rm_yamaha_sound_straight:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_sound_straight'
+  rm_yamaha_scene_bddvd:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_scene_bddvd'
+  rm_yamaha_scene_tv:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_scene_tv'          
+  rm_yamaha_scene_cd:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_scene_cd'
+  rm_yamaha_scene_radio:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_scene_radio'
+  rm_yamaha_setup:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_setup'
+  rm_yamaha_option:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_option'          
+  rm_yamaha_up:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_up'
+  rm_yamaha_down:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_down'
+  rm_yamaha_left:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_left'
+  rm_yamaha_right:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_right'          
+  rm_yamaha_enter:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_enter'
+  rm_yamaha_vol_up:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_vol_up'
+  rm_yamaha_vol_down:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_vol_down'
+  rm_yamaha_return:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_return'          
+  rm_yamaha_display:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_display'
+  rm_yamaha_top_menu:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_top_menu'
+  rm_yamaha_popout_menu:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_popout_menu'
+  rm_yamaha_mute:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_mute'          
+  rm_yamaha_mode:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_mode'
+  rm_yamaha_stop:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_stop'
+  rm_yamaha_pause:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_pause'
+  rm_yamaha_play:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_play'          
+  rm_yamaha_rewind:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_rewind'
+  rm_yamaha_ffoward:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_ffoward'
+  rm_yamaha_previous:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_previous'
+  rm_yamaha_next:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'yamaha_next'

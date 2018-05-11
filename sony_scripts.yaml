@@ -1,0 +1,372 @@
+script:
+  rm_sony_tv_input:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_input'
+  rm_sony_tv_power:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_power'
+  rm_sony_tv_da:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_da'
+  rm_sony_tv_sync_menu:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_sync_menu'
+  rm_sony_tv_expand:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_expand'
+  rm_sony_tv_exit:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_exit'
+  rm_sony_tv_1:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_1'
+  rm_sony_tv_2:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_2'
+  rm_sony_tv_3:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_3'
+  rm_sony_tv_4:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_4'
+  rm_sony_tv_5:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_5'
+  rm_sony_tv_6:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_6'
+  rm_sony_tv_7:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_7'
+  rm_sony_tv_8:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_8'
+  rm_sony_tv_9:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_9'            
+  rm_sony_tv_info:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_info'
+  rm_sony_tv_0:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_0'
+  rm_sony_tv_menu:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_menu'
+  rm_sony_tv_gplay:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_gplay'
+  rm_sony_tv_netflix:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_netflix'
+  rm_sony_tv_red:  
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_red'
+  rm_sony_tv_green:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_green'
+  rm_sony_tv_yellow:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_yellow'
+  rm_sony_tv_blue:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_blue'
+  rm_sony_tv_action_menu:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_action_menu'
+  rm_sony_tv_guide:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_guide'
+  rm_sony_tv_home:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_home'
+  rm_sony_tv_discover:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_discover'
+  rm_sony_tv_back:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_back'
+  rm_sony_tv_tv: 
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_tv'
+  rm_sony_tv_up: 
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_up'
+  rm_sony_tv_down:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_down'
+  rm_sony_tv_left:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_left'
+  rm_sony_tv_right:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_right'
+  rm_sony_tv_enter:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_enter'
+  rm_sony_tv_vol up:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_vol up'
+  rm_sony_tv_vol_down:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_vol_down'
+  rm_sony_tv_prog_up:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_prog_up'
+  rm_sony_tv_prog_down:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_prog_down'
+  rm_sony_tv_refresh:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_refresh'
+  rm_sony_tv_mute:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_mute'
+  rm_sony_tv_audio:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_audio'
+  rm_sony_tv_rewind:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_rewind'
+  rm_sony_tv_play:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_play'
+  rm_sony_tv_ffoward:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_ffoward'
+  rm_sony_tv_subtitles:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_subtitles'
+  rm_sony_tv_previous:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_previous'
+  rm_sony_tv_pause:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_pause'
+  rm_sony_tv_next:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_next'
+  rm_sony_tv_help:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_help'
+  rm_sony_tv_record:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_record'
+  rm_sony_tv_stop:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_stop'
+  rm_sony_tv_titlelist:
+    sequence:
+      - service: remote.send_command
+        entity_id: 'remote.<name>'
+        data:
+          command:
+            - 'sony_tv_titlelist'
