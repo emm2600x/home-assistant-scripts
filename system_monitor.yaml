@@ -31,30 +31,45 @@ sensor:
       - type: processor_use
       - type: last_boot
       - type: since_last_boot
+  - platform: api_streams
+  - platform: version
+  - platform: folder
+    folder: /config  
 
-group:
-  - pi_stats:
-      - name: Pi Stats
-        icon: mdi:server
-        entities:
-            - sensor.disk_use_percent_home
-            - sensor.disk_use
-            - sensor.disk_free
-            - sensor.memory_use_percent
-            - sensor.memory_use
-            - sensor.memory_free      
-            - sensor.swap_use_percent
-            - sensor.swap_use
-            - sensor.swap_free
-            - sensor.processor_use
-            - sensor.load_1m
-            - sensor.load_5m
-            - sensor.load_15m
-            - sensor.network_in_wlan0
-            - sensor.network_out_wlan0
-            - sensor.packets_in_wlan0
-            - sensor.packets_out_wlan0
-            - sensor.ipv4_address_wlan0
-            - sensor.ipv6_address_wlan0
-            - sensor.last_boot
-            - sensor.since_last_boot
+####groups#####
+speedtest:
+  name: Speedtest
+  icon: mdi:gauge
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_ping
+    - sensor.speedtest_upload
+
+
+pi_stats:
+  - name: Pi Stats
+    icon: mdi:server
+    entities:
+        - sensor.disk_use_percent_home
+        - sensor.disk_use
+        - sensor.disk_free
+        - sensor.memory_use_percent
+        - sensor.memory_use
+        - sensor.memory_free      
+        - sensor.swap_use_percent
+        - sensor.swap_use
+        - sensor.swap_free
+        - sensor.processor_use
+        - sensor.load_1m
+        - sensor.load_5m
+        - sensor.load_15m
+        - sensor.network_in_wlan0
+        - sensor.network_out_wlan0
+        - sensor.packets_in_wlan0
+        - sensor.packets_out_wlan0
+        - sensor.ipv4_address_wlan0
+        - sensor.ipv6_address_wlan0
+        - sensor.last_boot
+        - sensor.since_last_boot
+        - sensor.version
+        - sensor.api_streams
