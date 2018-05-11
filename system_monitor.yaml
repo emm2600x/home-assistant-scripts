@@ -1,0 +1,60 @@
+sensor:
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: disk_use
+        arg: /home
+      - type: disk_free
+        arg: /home
+      - type: memory_free
+      - type: memory_use
+      - type: memory_use_percent
+      - type: swap_use_percent
+      - type: swap_use
+      - type: swap_free
+      - type: load_1m
+      - type: load_5m
+      - type: load_15m
+      - type: network_in
+        arg: wlan0
+      - type: network_out
+        arg: wlan0
+      - type: packets_in
+        arg: wlan0
+      - type: packets_out
+        arg: wlan0
+      - type: ipv4_address
+        arg: wlan0
+      - type: ipv6_address
+        arg: wlan0
+      - type: processor_use
+      - type: last_boot
+      - type: since_last_boot
+
+group:
+  - pi_stats:
+      - name: Pi Stats
+        icon: mdi:server
+        entities:
+            - sensor.disk_use_percent_home
+            - sensor.disk_use
+            - sensor.disk_free
+            - sensor.memory_use_percent
+            - sensor.memory_use
+            - sensor.memory_free      
+            - sensor.swap_use_percent
+            - sensor.swap_use
+            - sensor.swap_free
+            - sensor.processor_use
+            - sensor.load_1m
+            - sensor.load_5m
+            - sensor.load_15m
+            - sensor.network_in_wlan0
+            - sensor.network_out_wlan0
+            - sensor.packets_in_wlan0
+            - sensor.packets_out_wlan0
+            - sensor.ipv4_address_wlan0
+            - sensor.ipv6_address_wlan0
+            - sensor.last_boot
+            - sensor.since_last_boot
